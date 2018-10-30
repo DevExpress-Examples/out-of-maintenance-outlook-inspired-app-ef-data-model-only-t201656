@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using DevExpress.DataAnnotations;
 
 namespace DevExpress.DevAV {
     public class Employee : DatabaseObject {
@@ -18,13 +16,13 @@ namespace DevExpress.DevAV {
 
         public PersonPrefix Prefix { get; set; }
 
-        [Phone]
+        [DevExpress.DataAnnotations.Phone]
         public string HomePhone { get; set; }
 
-        [Required, Phone]
+        [Required, DevExpress.DataAnnotations.Phone]
         public string MobilePhone { get; set; }
 
-        [Required, EmailAddress]
+        [Required, DevExpress.DataAnnotations.EmailAddress]
         public string Email { get; set; }
 
         public string Skype { get; set; }

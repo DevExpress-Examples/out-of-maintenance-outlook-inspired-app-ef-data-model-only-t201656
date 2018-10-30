@@ -1,8 +1,5 @@
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using DevExpress.DataAnnotations;
 
 namespace DevExpress.DevAV {
     public partial class Customer : DatabaseObject {
@@ -17,13 +14,13 @@ namespace DevExpress.DevAV {
         public string AddressCity { get; set; }
         public string AddressZipCode { get; set; }
 
-        [Phone]
+        [DevExpress.DataAnnotations.Phone]
         public string Phone { get; set; }
 
-        [Phone]
+        [DevExpress.DataAnnotations.Phone]
         public string Fax { get; set; }
 
-        [Url]
+        [DevExpress.DataAnnotations.Url]
         public string Website { get; set; }
 
         [DataType(DataType.Currency)]
